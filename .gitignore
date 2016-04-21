@@ -3,6 +3,6 @@ gulpfiles.js
 src
 tasks
 semantic.json
-components
-semantic.css
-semantic.js
+semantic/dist/components
+semantic/dist/semantic.css
+semantic/dist/semantic.js
