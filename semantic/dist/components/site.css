@@ -1,0 +1,198 @@
+/*!
+ * # Semantic UI 2.1.8 - Site
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2015 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+             Page
+*******************************/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&subset=latin');
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 13.5px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  min-width: 320px;
+  background: #FFFFFF;
+  font-family: 'Poppins', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6296296;
+  color: #414141;
+  font-smoothing: antialiased;
+  font-weight: normal;
+}
+
+
+/*******************************
+             Headers
+*******************************/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Poppins', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  line-height: 1.4em;
+  margin: calc(2rem -  0.2em ) 0em 1rem;
+  font-weight: 600;
+  padding: 0em;
+}
+h1 {
+  min-height: 1rem;
+  font-size: 3.11111111rem;
+}
+h1.light {
+  font-size: 3.11111111rem;
+  font-weight: 300;
+}
+h2 {
+  font-size: 2.81481481rem;
+}
+h2.light {
+  font-size: 2.81481481rem;
+  font-weight: 300;
+}
+h3 {
+  font-size: 2.37037037rem;
+}
+h4 {
+  font-size: 2.07407407rem;
+}
+h5 {
+  font-size: 1.62962963rem;
+}
+h6 {
+  font-size: 1.11111111rem;
+}
+h6.uppercase {
+  font-size: 1.11111111rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0em;
+}
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child {
+  margin-bottom: 0em;
+}
+
+
+/*******************************
+             Text
+*******************************/
+
+p {
+  margin: 0em 0em 1em;
+  line-height: 1.6296296;
+}
+p:first-child {
+  margin-top: 0em;
+}
+p:last-child {
+  margin-bottom: 0em;
+}
+
+/*-------------------
+        Links
+--------------------*/
+
+a {
+  color: #008bd9;
+  text-decoration: none;
+}
+a:hover {
+  color: #006aa6;
+  text-decoration: none;
+}
+.right.aligned.field {
+  text-align: right;
+}
+.underlined,
+a.underlined:hover {
+  text-decoration: underline;
+}
+
+
+/*******************************
+          Highlighting
+*******************************/
+
+
+/* Site */
+::-webkit-selection {
+  background-color: #CCE2FF;
+  color: #414141;
+}
+::-moz-selection {
+  background-color: #CCE2FF;
+  color: #414141;
+}
+::selection {
+  background-color: #CCE2FF;
+  color: #414141;
+}
+
+/* Form */
+textarea::-webkit-selection,
+input::-webkit-selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: #414141;
+}
+textarea::-moz-selection,
+input::-moz-selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: #414141;
+}
+textarea::selection,
+input::selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: #414141;
+}
+
+
+/*******************************
+        Global Overrides
+*******************************/
+
+.background.hexagon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("https://d2hlei1umhw6cd.cloudfront.net/libs/img/bg_hexagon.png");
+  background-repeat: repeat;
+  background-size: 50%;
+  background-position: top;
+  opacity: 0.02;
+}
+@media only screen and (max-width: 800px) {
+  .background.hexagon {
+    display: none;
+  }
+}
