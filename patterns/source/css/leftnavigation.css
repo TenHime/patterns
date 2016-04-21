@@ -1,0 +1,36 @@
+.ui.segment {
+    margin: 0!important;
+    border: none!important;
+    border-radius: 0;
+}
+
+.ui.header.segment{
+    font-size: @miniSize;
+    text-transform: uppercase;
+    line-height: 1;
+    width: 100%;
+    background: #F7F7F7;
+    border:0;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    border-radius: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: block;
+}
+
+
+.left_nav.column {
+    width: 350px;
+    padding:0!important;
+}
+
+.ui.sidebar_acion.segment {
+    padding-left: 40px!important;
+    padding-right: 40px!important;
+}
+
+.ui.sidebar_acion.segment a{
+    font-weight:600;
+    color: @priman
+}
