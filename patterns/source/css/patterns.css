@@ -1,0 +1,94 @@
+.ui.fluid>.ui.grid>.column .ui.table thead th{
+    padding-left: 0 !important;
+    padding-bottom: 0.592592; /*8px, old:0.4*/
+    padding-top: 1.333333rem!important;/*20px*/
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase!important;
+    letter-spacing: 0.75px;
+    border:none;
+    
+}
+
+.ui.fluid>.ui.grid>.column .ui.table thead th[colspan]{
+    text-align: center;
+}
+
+.ui.fluid>.ui.grid>.column .ui.table thead th{
+    text-align: left;
+}
+
+.ui.fluid>.ui.grid>.column .ui.table{
+    margin:auto;
+    margin-top:3rem;
+    width:auto;
+    
+}
+
+/*------------
+    MODAL
+------------*/
+
+.ui.modal{
+    width:500px;
+    padding-left:3.185185rem;/*43/13.5*/
+    padding-right:3.185185rem;/*43/13.5*/
+    padding-top:2.222222em;/*30/13.5*/
+    padding-bottom: 2.792592em;/*37.7/13.5*/
+    box-shadow:none;
+    border:1px solid #ddd;
+    border-radius: 8px;;
+}
+
+.ui.modal>.header{
+    font-size:1.185185rem!important;/*16/13.5*/
+    text-transform: uppercase;
+    font-weight: 700;
+    padding:0;
+    border:none;
+    margin-bottom:1.4375em; /*30/16*/
+}
+
+.ui.modal i.close{
+    cursor: pointer;
+    position: absolute;
+    top: 1.34285714rem;
+    right: 1.64285714rem;
+    z-index: 1;
+    opacity: .8;
+    font-size: 1.5rem!important;
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
+.ui.modal>.content{
+    padding:0;
+    line-height:1.851851rem!important;
+}
+
+.ui.modal>.content label{
+    font-size: 1rem;
+    color:#767676;
+    font-weight: 500;
+}
+
+.ui.modal > .content >.ui.fluid.dropdown {
+    margin-top:0.2rem!important;
+}
+
+.ui.modal >.actions{
+    background:none;
+    border:none;
+    padding:0;
+    margin-top:2.592592rem;/*35/13.5*/ 
+}
+
+.ui.modal >.actions a{
+    cursor: pointer;
+}
+
+.ui.modal >.actions a:hover{
+    color:##40b5d8;
+}
+
+.

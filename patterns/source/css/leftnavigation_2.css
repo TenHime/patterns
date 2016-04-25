@@ -32,11 +32,9 @@
     padding:0!important;
     float: left;
     border-right:1px solid #ddd;
-     background: #FBFBFB;
 }
 
-.left_nav.column>.ui.segment:not(.header){
-    background: #FBFBFB;
+.left_nav.column>.ui.segment:not(.header){    
 }
 
 /*for those link on the sidebar/left nav*/
@@ -51,7 +49,6 @@
 padding-top: 10px;
     padding-bottom: 10px;
     font-weight:600;
-    background: #FBFBFB;
 }
 
 .ui.sidebar_action.segment>.ui.segment:hover{
@@ -63,31 +60,64 @@ padding-top: 10px;
     margin:5px 35px;
 }
 
-/*TABLE*/
-.left_nav>.ui.segment>.ui.table thead th{
-    padding-left: 0 !important;
-    padding-bottom: 0.592592; /*8px, old:0.4*/
-    padding-top: 1.333333rem!important;/*20px*/
-    font-weight: 700;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 0.75px;
+/*ACCORDION*/
+
+.ui.accordion{
+    padding-top: 1em;
+    padding-bottom:1em;  
 }
 
-.left_nav>.ui.segment>.ui.table{
-    padding-left: 25px;
-    padding-right: 25px;
+
+.accordion .accordion.chosen_tab.title{
+    font-weight: 600;
 }
 
-/*for each row in table*/
-.left_nav>.ui.segment>.ui.table tbody td{
-    padding-top:0.888889rem;/*12px*/
-    padding-bottom:0.888889rem;/*12px*/
+.ui.accordion .chosen_tab.title{
+    font-weight: 600;
 }
 
-.left_nav>.ui.segment>.ui.table tbody td:last-child{
-    text-align: right;
+.accordion>.title>.dropdown{
+    float:right!important;
+    margin-top:0.3em!important;
 }
+
+.accordion a{
+    color:#414141;
+}
+
+.accordion >.title a:hover{
+    color:#717171;
+    cursor: pointer;
+    /*background: #F7F7F7;*/
+}
+
+.accordion i:not(.dropdown){
+    margin-right:1.074074em!important;/*14.5/13.5*/
+}
+
+.accordion>.title{
+    padding-top: 1.2em!important;/*old:11/13.5*/
+    padding-bottom:1.2em!important;/*old:11/13.5*/
+    padding-left:2.962962rem!important; /*40/13.5*/
+    padding-right: 2.962962rem!important; /*40/13.5*/
+}
+
+.accordion .ui.accordion{
+    margin-top:0!important;
+}
+
+.accordion .ui.accordion>.title{
+    padding-top: 0.814814em!important;
+    padding-bottom:0.814814em!important;
+    padding-left:4.562962em!important;
+}
+
+.accordion>.content{
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+    margin-top:0 !important;
+}
+
 
 /*Right side content*/
 .right_content.column{
@@ -115,6 +145,8 @@ padding-top: 10px;
 .right_content.column>.ui.content.segments>.ui.segment{
     margin-top: 1.2rem!important;
 }
+
+
 
 /*RIGHT TABLE*/
 .ui.content.segments>.ui.list.grid>.column .ui.table thead th{

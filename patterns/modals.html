@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portal Page">
+    <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, semantic">
+    <meta name="author" content="Marcus">
+    
+    <title>Members</title>
+    <link rel="icon" type="image/png" href="http://d2hlei1umhw6cd.cloudfront.net/libs/img/logo_hoiio.png">
+    
+    <!-- Semantic CSS -->
+    <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+    
+    <!-- Library JS -->
+    <script src="source/js/jquery.min.js"></script>
+    <script src="source/js/modernizr.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="source/css/patterns.css">
+    
+</head>
+<body>
+    
+    <!-- Content -->
+    <div class="ui fluid container">
+        <div class="ui grid">
+            <div class="left aligned column">
+                <table class="ui very basic compact table">
+                    <thead>
+                        <tr>
+                            <th colspan="4">modal</th>
+                        </tr>
+                        <tr>
+                            <th>Basic modal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="four wide"><div class="ui button" id="btn_modal_text">Only text</div></td>
+                            <td class="four wide"><div class="ui button" id="btn_modal_form">With form input</div></td>
+                            <td class="four wide"></td>
+                            <td class="four wide">
+                                 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+                <div class="ui dimmer modals page transition hidden">
+                    <!--Delete comfirmation-->
+                    <div class="ui modal" id="modal_text">
+                        <div class="header">Cancel subscription</div>
+                        <i class="close icon"></i>
+                        <div class="content">
+                            If you cancel this subscription, all of apps within it will be inactive when your current billing ends on Jun 05, 2016. Are you sure you want to cancel it?
+                        </div>
+                        <div class="actions">
+                            <a class="cancel">Go back</a>
+                            <div class="ui approve error button">Cancel subscription</div>
+                        </div>
+                    </div>
+                    <!--With dropdowns: Change roles-->
+                    <div class="ui modal" id="modal_form">
+                        <div class="header">Change role</div>
+                        <i class="close icon"></i>
+                        <div class="content">
+                            <div class="ui form">
+                                <div class="field">
+                                    <label>Roles</label>
+                                    <div class="ui fluid search selection dropdown">
+                                        <input type="hidden" name="role">
+                                        <i class="dropdown icon"></i>
+                                        <input class="search" autocomplete="off" tabindex="0">
+                                        <div class="default text">Select role</div>
+                                        <div class="menu" tabindex="-1">
+                                            <div class=" item" data-value="ceo">CEO</div>
+                                            <div class="item" data-value="marketing">Senior Marketing Manager</div>
+                                            <div class="item" data-value="iy">IT guy</div>
+                                            <div class="item" data-value="sales">Dispatch Sales </div>
+                                            <div class="item" data-value="support">Customer Online Support</div>
+                                            <div class="item" data-value="sedev">Senior Developer</div>
+                                            <div class="item" data-value="judev">Junior Developer</div>
+                                            <div class="item" data-value="graphic">Graphic designer</div>
+                                            <div class="item" data-value="product">Product Designer</div>
+                                            <div class="item" data-value="finace">Finance Manager</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="two fields">
+                                    <div class="twelve wide field">
+                                        <label>Department</label>
+                                        <div class="ui fluid search selection dropdown">
+                                            <input type="hidden" name="role">
+                                            <i class="dropdown icon"></i>
+                                            <input class="search" autocomplete="off" tabindex="0">
+                                            <div class="default text">Select role</div>
+                                            <div class="menu" tabindex="-1">
+                                                <div class=" item" data-value="des">Design</div>
+                                                <div class="item" data-value="marketing">Marketing</div>
+                                                <div class="item" data-value="iy">IT</div>
+                                                <div class="item" data-value="sales">Sales </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="six wide field">
+                                        <label>Code</label>
+                                        <input type="text" placeholder="Enter code">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="actions">
+                            <a class="cancel">Cancel</a>
+                            <div class="ui approve primary button">Save</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Semantic Script -->
+    <script src="../semantic/dist/semantic.min.js"></script>
+    
+    <!-- Custom Script -->
+    <script src="source/js/component.js"></script>
+
+</body>
+</html>
