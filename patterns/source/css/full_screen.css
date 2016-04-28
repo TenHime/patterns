@@ -25,83 +25,10 @@
     display: block;
 }
 
-/*create new*/
-/*for screen has vertical nav*/
-.left_nav.column {
-    width: 350px!important;
-    padding:0!important;
-    float: left;
-    border-right:1px solid #ddd;
-     background: #FBFBFB;
-}
-
-.left_nav.column>.ui.segment:not(.header){
-    background: #FBFBFB;
-}
-
-/*for those link on the sidebar/left nav*/
-.ui.sidebar_action.segment {
-    padding: 0.370370em;/*5px*/
-    border-bottom: 1px solid #ddd!important;
-}
-
-.ui.sidebar_action.segment>.ui.segment{
-    padding-left:35px;
-    padding-right:35px;
-padding-top: 10px;
-    padding-bottom: 10px;
-    font-weight:600;
-    background: #FBFBFB;
-}
-
-.ui.sidebar_action.segment>.ui.segment:hover{
-    background-color:#e4e4e4;
-}
-
-.ui.sidebar_action.segment>.ui.icon.input{
-    width: 270px;
-    margin:5px 35px;
-}
-
-
-/*Clear padding of big div*/
-.ui.left.aligned.column{
-    padding-bottom:0!important;
-}
-
-/*TABLE*/
-.left_nav>.ui.segment>.ui.table thead th{
-    padding-left: 0 !important;
-    padding-bottom: 0.592592; /*8px, old:0.4*/
-    padding-top: 1.333333rem!important;/*20px*/
-    font-weight: 700;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 0.75px;
-}
-
-.left_nav>.ui.segment>.ui.table thead th a{
-    margin-left: 1em!important;
-}
-
-.left_nav>.ui.segment>.ui.table{
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-/*for each row in table*/
-.left_nav>.ui.segment>.ui.table tbody td{
-    padding-top:0.888889rem;/*12px*/
-    padding-bottom:0.888889rem;/*12px*/
-}
-
-.left_nav>.ui.segment>.ui.table tbody td:last-child{
-    text-align: right;
-}
 
 /*Right side content*/
 .right_content.column{
-    width: calc(100% - 350px)!important;
+    width: auto;
     padding:0!important;
 }
 
@@ -122,9 +49,11 @@ padding-top: 10px;
 }
 
 /*margin from the header*/
-.right_content.column>.ui.content.segments>.ui.segment{
-    /*margin-top: 1.2rem!important;*/
-}
+/*.right_content.column>.ui.content.segments>.ui.segment{
+    margin-top: 1.2rem!important;
+}*/
+
+
 
 /*RIGHT TABLE*/
 .ui.content.segments>.ui.list.grid>.column .ui.table thead th{
@@ -173,3 +102,52 @@ padding-top: 10px;
     background-color: rgba(238,238,238,1)
 }
 
+/*--------------------
+    HORIZONTAL TABS
+----------------------*/
+.ui.secondary.pointing.menu{
+    padding-left:40px;
+    padding-right: 40px;
+    border-bottom: 1px solid #ccc;
+    margin-top:0;
+}
+
+.ui.secondary.pointing.menu .item{
+    padding-bottom: 1.4rem!important;
+    padding-top: 1.4rem!important;
+}
+
+.ui.secondary.pointing.menu .item:not(:last-child){
+    margin-right: 1rem;
+}
+
+.ui.secondary.pointing.menu .active.item{
+    font-weight:600;
+}
+
+.ui.secondary.pointing.menu .item  >.mini.empty.label{
+    top:-1px!important;
+    font-size: 0.518518rem;
+}
+.ui.secondary.pointing.menu .item  >.ui.tiny.label{
+    background: #e8e8e8;
+    color:#414141;
+    font-weight: 600;
+    padding:0.074074rem 0.592592rem;/*1 - 8/13.5*/
+    font-size:0.777778rem;/*11.5/13.5*/
+}
+
+.ui.secondary.pointing.menu .item  >.ui.tiny.label:hover{
+    border: 1px solid #ccc;
+    opacity:0.8;
+}
+/*-------------
+    LABEL POPUP
+---------------*/
+
+.ui.popup {
+    font-size: 0.8rem!important;
+    letter-spacing: 0.02rem!important;
+    line-height: 1rem !important;
+    margin-left: -0.7rem;
+}

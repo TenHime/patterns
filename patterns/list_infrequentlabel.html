@@ -8,7 +8,7 @@
     <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, semantic">
     <meta name="author" content="Marcus">
     
-    <title>Vertical Nav with lists</title>
+    <title>Vertical Nav with Tabs</title>
     <link rel="icon" type="image/png" href="http://d2hlei1umhw6cd.cloudfront.net/libs/img/logo_hoiio.png">
     
     <!-- Semantic CSS -->
@@ -19,7 +19,7 @@
     <script src="source/js/modernizr.js"></script>
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="source/css/leftnavigation.css">
+    <link rel="stylesheet" type="text/css" href="source/css/list.css">
     
 </head>
 <body>
@@ -59,83 +59,16 @@
                 
                <div class="ui segment">
                    <div class="ui grid">
-                       
-                       <div class="left aligned left_nav column">
-                           <div class="ui header segment">My campaigns</div>
-                           <div class="ui sidebar_action segment">
-                               <div class="ui segment"><i class="plus icon"></i>Add new campaign</div>
-                           </div>
-                           
-                           <div class="ui sidebar_action segment">
-                               <div class="ui icon input">
-                                   <input type="text" placeholder="Search a campaign"><i class="search icon"></i>
-                               </div>
-                           </div>
-                           
-                           <div  class="ui segment">
-                               <table class="ui very basic compact table">
-                                   <thead>
-                                       <tr>
-                                           <th>Private<a class="ui  circular label">2</a></th>
-                                           <th></th>
-                                       </tr>
-                                   </thead>
-                                   <tbody>
-                                       <tr>
-                                           <td>C.C Lemon Campaign</td>
-                                           <td>3</td>
-                                       </tr>
-                                       <tr>
-                                           <td>CGI Meet up</td>
-                                           <td>2</td>
-                                       </tr>
-                                   </tbody>
-                                   <thead>
-                                       <tr>
-                                           <th>Shared<a class="ui  circular label">8</a></th>
-                                           <th></th>
-                                       </tr>
-                                   </thead>
-                                   <tbody>
-                                       <tr>
-                                           <td>Crescent Mall Grand Opening</td>
-                                           <td>13</td>
-                                       </tr>
-                                       <tr>
-                                           <td>Pepsi new flavour Promotion</td>
-                                           <td>9</td>
-                                       </tr>
-                                       <tr>
-                                           <td>Shiseido Office Coming Soon</td>
-                                           <td>5</td>
-                                       </tr>
-                                       <tr>
-                                           <td>Service Desk</td>
-                                           <td>1</td>
-                                       </tr>
-                                       <tr>
-                                           <td>Online Shopping Sale</td>
-                                           <td>11</td>
-                                       </tr>
-                                       <tr>
-                                           <td>HR Management Event</td>
-                                           <td>2</td>
-                                       </tr>
-                                   </tbody>
-                               </table>
-                           </div>
-                       </div>
-                       
                        <div class="left aligned right_content column">
                            <div class="ui header segment">
-                               Campaign : CGI Meet up
+                               Call log
                            </div>
                            
                            <div class="ui content segments">
                                <div class="ui segment">
                                    <div class="ui middle aligned two column  grid">
                                        <div class="left floated column">
-                                           15 members and 2 pending invites
+                                           15 members and 2 pending invitesinvites
                                        </div>
                                        <div class="right aligned right floated column">
                                            <div class="ui icon input">
@@ -151,61 +84,66 @@
                                        <table class="ui very basic compact table">
                                            <thead>
                                                 <tr>
-                                                    <th class="left aligned">Full Name</th>
-                                                    <th>Phone Number</th>
-                                                    <th>Role</th>
-                                                    <th>hotlines</th>
-                                                    <th>Last Accessed</th> 
-                                                    <th></th>
+                                                    <th><div class="ui  master checkbox">
+                                                        <input type="checkbox" name="all"><label></label></div>
+                                                    </th>
+                                                    <th>Full name</th>
+                                                    <th>Phone numer</th>
+                                                    <th>Jobs</th>
+                                                    <th class="two wide">Apps</th>
+                                                    <th>Last Access</th>
                                                 </tr>
                                             </thead>
                                            <tbody>
-                                                <tr id="staff1">
-                                                    <td><img class="ui avatar image" src="http://marcus8712.github.io/standards/source/img/square-image.jpg"><span>Steve Van</span></td>
+                                                 <tr id="staff1">
+                                                    <td><div class="ui checkbox"><input type="checkbox" name="all"><label></label></div></td>
+                                                    <td><img class="ui avatar image" src="https://raw.githubusercontent.com/TenHime/hoiio-portal/gh-pages/source/img/ava_1.jpg"><span>Steve Van</span></td>
                                                     <td>+84 905721417</td>
                                                     <td>Owner</td>
                                                     <td>121</td>
                                                     <td>03 Mar 2016, 11:47 AM</td>
                                                 </tr>
                                                 <tr id="staff2">
-                                                    <td><img class="ui avatar image" src="http://marcus8712.github.io/standards/source/img/square-image.jpg"><span>Tuan Vo</span></td>
+                                                    <td><div class="ui checkbox"><input type="checkbox" name="all"><label></label></div></td>
+                                                    <td><img class="ui avatar image" src="https://raw.githubusercontent.com/TenHime/hoiio-portal/gh-pages/source/img/ava_5.jpg"><span>Tuan Vo</span></td>
                                                     <td>+65 91271034</td>
                                                     <td>Admin</td>
                                                     <td>32</td>
                                                     <td>26 Feb 2016, 08:18 AM</td>
                                                 </tr>
                                                 <tr id="staff3">
-                                                    <td><img class="ui avatar image" src="http://marcus8712.github.io/standards/source/img/square-image.jpg"><span>Cash Hoang</span></td>
+                                                    <td><div class="ui checkbox"><input type="checkbox" name="all"><label></label></div></td>
+                                                    <td>
+                                                        <img class="ui avatar image" src="https://raw.githubusercontent.com/TenHime/hoiio-portal/gh-pages/source/img/ava_3.jpg"> <span>Cash Hoang</span>
+                                                        <a class="ui warning circular label" data-position="top center" data-type="duplicate" data-content="Duplicates with 3" data-variation="inverted">
+                                                            3
+                                                        </a>
+                                                    </td>
                                                     <td>+65 97507182</td>
                                                     <td>Member</td>
                                                     <td>5</td>
                                                     <td>01 Feb 2016, 11:42 AM</td>
                                                 </tr>
                                                 <tr id="staff4">
-                                                    <td><img class="ui avatar image" src="http://marcus8712.github.io/standards/source/img/square-image.jpg"><span>Huyen Xu</span></td>
+                                                    <td><div class="ui checkbox"><input type="checkbox" name="all"><label></label></div></td>
+                                                    <td><img class="ui avatar image" src="https://raw.githubusercontent.com/TenHime/hoiio-portal/gh-pages/source/img/ava_9.jpg"><span>Huyen Xu</span></td>
                                                     <td>+65 96445229</td>
                                                     <td>Members</td>
                                                     <td>16</td>
                                                     <td>04 Mar 2016, 06:50 PM</td>
                                                 </tr>
                                                 <tr id="staff5">
-                                                    <td><img class="ui avatar image" src="http://marcus8712.github.io/standards/source/img/square-image.jpg"><span>Cash Hoang</span></td>
-                                                    <td>+65 97507182</td>
+                                                    <td><div class="ui checkbox"><input type="checkbox" name="all"><label></label></div></td>
+                                                    <td><img class="ui avatar image" src="https://raw.githubusercontent.com/TenHime/hoiio-portal/gh-pages/source/img/ava_4.jpg"><span>Uyen Hime</span></td>
+                                                    <td>+65 93675730</td>
                                                     <td>Member</td>
-                                                    <td>5</td>
-                                                    <td>01 Feb 2016, 11:42 AM</td>
-                                                </tr>
-                                                <tr id="staff5">
-                                                    <td><img class="ui avatar image" src="http://marcus8712.github.io/standards/source/img/square-image.jpg"><span>Cash Hoang</span></td>
-                                                    <td>+65 97507182</td>
-                                                    <td>Member</td>
-                                                    <td>5</td>
-                                                    <td>01 Feb 2016, 11:42 AM</td>
+                                                    <td>83</td>
+                                                    <td>10 Dec 2015, 03:19 PM </td>
                                                 </tr>
                                            </tbody>
                                            <tfoot>
                                                 <tr>
-                                                    <th colspan="5">
+                                                    <th colspan="8">
                                                         <div class="ui right floated pagination menu">
                                                             <a class="icon item">
                                                             <i class="chevron left icon"></i>

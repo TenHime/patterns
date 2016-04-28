@@ -1,0 +1,250 @@
+/*need to change in semantic*/
+/* set segment don't have border, round corner*/
+
+.ui.segment {
+    margin: 0!important;
+    border: none;
+    border-radius: 0;
+}
+
+/*create an header segment in semantic*/
+.ui.header.segment{
+    font-size: 1.481481rem /*20/13.5*/!important;
+    text-transform: uppercase;
+    line-height: 1;
+    width: 100%;
+    background: #F7F7F7;
+    border:0;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    border-radius: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    display: block;
+}
+
+
+/*Right side content*/
+.right_content.column{
+    width: auto;
+    padding:0!important;
+}
+
+.right_content.column>.ui.content.segments{
+    border:none!important;
+    margin:0;
+    border-radius: 0;
+    padding-left:40px;
+    padding-right: 40px;
+}
+
+.right_content.column>.ui.content.segments>.ui.segment>.ui.grid>.column{
+    padding-left:0!important;
+}
+
+.right_content.column>.ui.content.segments>.ui.segment>.ui.grid>.column > .ui.input{
+    min-width: 250px;
+}
+
+/*margin from the header*/
+/*.right_content.column>.ui.content.segments>.ui.segment{
+    margin-top: 1.2rem!important;
+}*/
+
+
+
+/*RIGHT TABLE*/
+.ui.content.segments>.ui.list.grid>.column .ui.table thead th{
+    padding-left: 0 !important;
+    padding-bottom: 0.592592; /*8px, old:0.4*/
+    padding-top: 1.333333rem!important;/*20px*/
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+}
+
+.ui.content.segments>.ui.list.grid>.column .ui.table tbody td{
+    padding:1.6rem 0 !important;
+}
+
+.ui.content.segments>.ui.list.grid>.column .ui.table td .image{
+    margin-right: 12px;
+    margin-top: -1px;
+}
+
+.ui.list.grid{
+    margin-top: 0.6rem;
+}
+
+.ui.content.segments>.ui.list.grid>.column .ui.table tfoot th{
+    border-top: 1px solid #ddd;
+}
+
+/*PAGINATION*/
+.ui.pagination.menu{
+    min-height: 38px;   
+}
+
+.ui.pagination.menu .item{
+    padding-top: 10px !important;
+    padding-bottom: 9px !important;
+    min-width: 34px;
+}
+.ui.pagination.menu .icon.item {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.ui.pagination.menu .active.item{
+    background-color: rgba(238,238,238,1)
+}
+
+
+/*--------------------
+    BANNER MESSAGE
+----------------------*/
+.ui.banner.message{
+    border-radius: 0;
+    margin-bottom: 0;
+    border-right: 0;
+    border-left:0;
+    padding:0.740740rem;/*10/13.5*/
+    font-weight: 400;
+    font-size: 0.925925rem;
+    text-align:center;
+    color: #eeeeee;
+}
+
+.ui.banner.message p .icon{
+    font-size: 1.111111rem;
+    margin-right: 0.740740rem;
+    vertical-align:middle;
+    margin-bottom: 0.6rem!important;
+}
+
+.ui.banner.message a{
+    color:#eeeeee;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.ui.banner.message a:hover{
+    color: white;
+}
+
+
+.ui.banner.error.message{
+    background:#E95849;
+}
+
+.ui.banner.info.message{
+    background:#2BADD4;
+}
+
+.ui.banner.warning.message{
+    background:#E88631;
+}
+
+.ui.banner.success.message{
+    background:#19b37b;
+}
+
+/*--------------------
+    FLOATING MESSAGE
+----------------------*/
+
+.ui.floating.message{
+    position: absolute;
+    z-index: 1;
+    right:10px;
+    top: 10px;
+    width: 400px;
+    background: #FCFCFC;
+    color: #414141;
+    padding-left:1.629629rem;/*22/13.5*/
+    padding-right:1.629629rem;/*22/13.5*/
+}
+
+.ui.floating.message>.header{
+    margin-bottom:0.592592rem!important;
+    font-weight: 500;
+}
+
+.ui.floating.message p{
+    margin-bottom: 0;
+}
+
+.ui.floating.message .icon{
+    top:13px;
+}
+
+.ui.floating.message a{
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    float: right;
+    font-size: 0.925925rem;
+    margin-top:0.740740rem!important;/*6/13.5*/
+}
+
+.ui.floating.message a:not(.primary){
+    color:#767676!important;
+}
+
+.ui.floating.message a:hover{
+    color: #666666!important;
+}
+
+/*Error*/
+.ui.floating.error.message{
+    border: 1px solid #E95849;
+}
+
+.ui.floating.error.message>.header{
+    color: #E95849;
+}
+
+
+/*Warning*/
+.ui.floating.warning.message{
+    border: 1px solid #E88631;
+}
+
+.ui.floating.warning.message>.header{
+    color: #E88631;
+}
+
+
+/*Success*/
+.ui.floating.success.message>.header{
+    color: #169d6c;
+}
+.ui.floating.success.message{
+    border: 1px solid #169d6c;
+}
+
+/*Info*/
+
+.ui.floating.info.message{
+    border: 1px solid #2BADD4;
+}
+
+.ui.floating.info.message>.header{
+    color: #2BADD4;
+}
+
+/*Actions in the message*/
+.ui.floating.message a{
+    margin-left:1.5rem;
+}
+
+
+strong{
+    font-weight: 600!important;
+}
+
+

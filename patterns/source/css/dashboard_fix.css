@@ -1,0 +1,395 @@
+/*CARDS*/
+/*Fix --- button to be centered*/
+.ui.card>.ui.header .icon:only-child{
+    height:auto!important;
+    margin-right:0!important;
+    font-size:1.7rem!important;
+    padding:0em!important;
+}
+
+.ui.card>.ui.header .icon.button{
+    padding:0.1em!important;}
+
+/*Styling header text*/
+.ui.card > .ui.header{
+    border:none;
+    background: #F7F7F7;
+    font-size:1rem!important;
+    text-transform: uppercase;
+    display: block;
+    vertical-align: middle!important;
+    margin:0!important;
+    padding-top:1.2rem!important;
+    padding-bottom:1.2rem!important;
+    border-radius: 0!important; 
+    padding-left:1.8rem!important;
+    padding-right:1.8rem!important;
+}
+
+.ui.card > .ui.header.segment>.ui.grid>.column a{
+    font-size:1rem!important;
+    text-transform:none!important;
+    font-weight:400;
+}
+
+.ui.card > .ui.header.segment{
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd!important;
+}
+
+.ui.card>.content{
+    border-top:0!important;
+}
+
+/*Adjust padding of a card in column*/
+.ui.dashboard.segment>.ui.grid>.column{
+    padding:0!important;
+}
+.ui.dashboard.segment{
+    margin:0!important;
+}
+
+
+
+/*Restyle the card*/
+.ui.card{
+    border:none!important;
+    border-radius: 0px!important;
+    width:100% ;
+    box-shadow: none;
+    margin:0!important;
+}
+
+@media only screen and (max-width: 767px){
+    .ui.card > .ui.header{
+        padding-left: 2.5rem!important;
+        padding-right: 2.5rem!important;
+    }
+    .dashboard.segment>.ui.grid>.column{
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+}
+}
+
+/*RESTYLE THE WHOLE SEGMENT*/
+.ui.dashboard.segment{
+    border:none;
+}
+
+.dashboard.segment>.ui.grid>.column:not(:first-child):not(:last-child){
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+}
+
+/*Break word in header*/
+.ui.header.segment>.ui.grid>.column{
+        word-wrap: break-word;
+}
+
+/*Style img*/
+.ui.card img{
+    width:100%;
+}
+
+/*----------------*/
+
+/*Restyle COMPANY INFORMATION*/
+
+.ui.dashboard>.ui.grid>.five.wide.column:first-child>.ui.card>.content{
+    padding-top:2rem!important;
+    padding-bottom:1rem!important;
+}
+
+.ui.card>.content{
+    padding-top:1rem!important;
+    padding-bottom:1rem!important;
+    padding-left:1.8rem!important;
+    padding-right:1.5rem!important;
+}
+
+.ui.card>.content>.ui.list:not(.activities)>.item{
+    margin-bottom: 1.4rem!important;
+    padding-bottom:0!important;
+}
+
+.ui.card>.content>.ui.list>.item:last-child{margin-bottom:0px!important;}
+
+.content>.ui.list>.item>.ui.grid>.column>.ui.list>.item{
+    word-wrap: break-word;
+}
+
+.content>.ui.list>.item>.ui.grid>.column>.ui.list{padding:0!important;}
+
+.ui.list>.item>.ui.grid{
+    width:100%;
+    margin-left:0!important;
+    margin-bottom:0em!important;
+    padding:0!important;
+    margin-top: 0em!important;
+}
+
+.ui.list>.item>.ui.grid>.column>.ui.list>.item{
+    margin-bottom:0!important;
+    padding:0!important;
+}
+
+.ui.list>.item>.ui.grid>.column{
+    padding:0em;
+    margin-bottom: 0em!important;
+    margin-top: 0em!important;
+}
+
+.ui.list>.item>.header{
+    font-size: 0.92857rem!important;/*12px*/
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    line-height: 1.2rem;
+    word-wrap: break-word;
+    font-weight:600!important;
+}
+
+@media only screen and (max-width: 767px){
+   .ui.list>.item>.ui.grid>.column{
+       width:100%;
+       padding:0!important;}
+    .ui.list>.item>.ui.grid>.column:not(:first-child){
+        margin-top: 1.9rem!important;
+    }
+    
+    .ui.list>.item>.ui.grid>.column:first-child{ 
+    border-right: 1px solid #ddd;
+    margin-right:0.5em!important;
+    }
+    
+    .ui.card>.content{
+    padding-top:2.5rem!important;
+    padding-left:2.5rem!important;
+    padding-right:1.2rem!important;
+    }
+    
+    .credit.content >.ui.grid> .five.wide.column{
+        padding-right:2.3rem!important;}
+}
+
+
+.ui.list>.item>.ui.grid>.column:first-child{ 
+    border-right: 1px solid #ddd;
+    margin-right:0em!important;
+
+}
+
+
+.ui.list>.item>.ui.grid>.column:not(:first-child){ 
+    padding-left:1.5em;
+    padding-bottom:0!important;}
+
+
+/*----------------*/
+/*RESTYLE CREDITS*/
+.credit.content{
+    font-size: 4rem!important;
+}
+
+.content sup{
+    font-size: 0.25em;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    line-height:0;
+    position:relative;
+    vertical-align:baseline;
+    top:-2.3rem;
+}
+
+
+
+/*----------------*/
+/*RESTYLE SUBSCRIPTION*/
+.credit.content >.ui.grid> .five.wide.column{
+    font-size:1.57142rem;
+    font-weight:600;
+    line-height: 0.3rem;
+    display:block;
+    padding-right:2rem;
+}
+
+.credit.content >.ui.grid> .five.wide.column > .statistic.description{
+    font-size:0.85714rem!important;
+    font-weight:400;
+}
+
+
+
+/*----------------*/
+/*RESTYLE SUBSCRIBED APPS*/
+
+.app_number{
+    font-size: 1.4rem;
+    font-weight:400;
+}
+
+.ui.subscribedapps.horizontal.list >.item img {
+    width: 40px !important;
+    resize: both !important;
+}
+
+.ui.subscribedapps.horizontal.list > .item{
+    display:inline-block;
+    padding:0!important;
+    margin-left:0;
+    margin-top:0;
+    margin-bottom:1.3rem!important;
+    margin-right:0.8rem!important;
+    
+}
+
+.ui.subscribedapps.horizontal.list {
+    width:100%;
+    margin:0!important;
+    display:block;
+}
+
+.ui.card>.content a{
+    font-size: 1rem!important;
+    display: block;
+    text-align: right;
+}
+
+.five.wide.column:not(:first-child)>.ui.card:last-child>.content{
+    padding-top:1.7rem!important;
+    padding-bottom:1rem!important;
+}
+
+/*----------------*/
+/*RECENT ACTIVITIES*/
+
+ .ui.avatar.image{
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.ui.activities.list{
+    padding-bottom: 0!important;
+}
+
+@media only screen and (max-width: 767px){
+    .ui.activities.list > .item > .content{
+    word-wrap: break-word;
+    width:50%;}
+}
+
+.ui.activities.list > .item > .content{
+    word-wrap: break-word;
+    width:83%;
+}
+
+.ui.activities.list > .item >.right.floated.content{
+    width:17%;
+}
+
+.ui.activities.list > .item{
+    border-bottom:  1px solid #ddd!important;
+    margin-bottom:0!important;
+    padding-bottom:1rem;
+}
+
+.ui.activities.list > .item:last-child{
+    border:none!important;
+}
+
+.ui.activities.list > .item:not(:first-child){
+    padding-top: 17px;
+}
+
+.ui.activities.list > .item>.content{
+    font-weight: 400!important;
+}
+
+.content>.ui.activities.list > .item>.content>.description{
+    font-size:0.85714em;
+    font-weight:400;
+    color: #767676 ;
+    margin-top:1.3em!important;
+}
+
+.ui.with_text.header.segment{
+    padding-top:1.55rem!important;
+    padding-bottom:1.6rem!important;
+}
+
+
+/*SIDEBAR*/
+.ui.bottom.visible.sidebar, .ui.left.visible.sidebar, .ui.right.visible.sidebar, .ui.top.visible.sidebar{
+    box-shadow: none;
+}
+
+.detail.sidebar{
+    background: #fff;
+    min-width: 700px;
+}
+
+.detail.sidebar .segments,
+.detail.sidebar .segments .segment,
+.detail.sidebar .segment{
+    border:none;
+}
+
+.detail.sidebar>.ui.segment{
+    padding:0!important;
+}
+
+.detail.sidebar>.ui.segment>.ui.sidecontent.segment>.ui.list>.item>.info.content{
+    float: right;
+    text-align: right;
+    font-size: 0.8571em!important;
+    color:#767676 !important;
+    font-weight: 300;
+    /*margin-top:0.4rem;*/
+}
+
+.detail.sidebar>.ui.segment>.ui.header.segment .icon{
+    float: right;
+}
+
+.ui.sidecontent.segment>.ui.list>.item{
+    padding-top:1.2em!important;
+    padding-bottom:1.4em!important;
+    border-bottom:1px solid #ddd!important;
+}
+
+.ui.sidecontent.segment{
+    padding-top:6px!important;
+    vertical-align:middle!important;
+    padding-right: 40px!important;
+    padding-left:40px!important;
+    padding-top:0px!important;
+}
+
+.ui.sidecontent.segment > .ui.list> .item img{
+    margin-right:0.6rem!important;
+}
+
+.ui.sidecontent.segment > .ui.list >.item>.content:not(.info){
+    width:70%;
+    line-height: 1.7rem;
+    /*padding-top:0.2rem;*/
+}
+
+.ui.segment>.ui.header.segment{
+    border:none;
+    background: #F7F7F7;
+    font-size:1rem!important;
+    text-transform: uppercase;
+    display: block;
+    vertical-align: middle!important;
+    margin:0!important;
+    padding-top:1.5rem!important;
+    padding-bottom:1.5rem!important;
+    border-radius: 0!important; 
+    padding-left:1.8rem!important;
+    padding-right:1.8rem!important;
+}
+
+
+/*----------------*/
+/*HOTLINE HELP*/
+

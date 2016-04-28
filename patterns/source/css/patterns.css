@@ -25,6 +25,10 @@
     
 }
 
+.ui.fluid>.ui.grid>.column .ui.table tbody td{
+    border: none!important;
+}
+
 /*------------
     MODAL
 ------------*/
@@ -33,8 +37,8 @@
     width:500px;
     padding-left:3.185185rem;/*43/13.5*/
     padding-right:3.185185rem;/*43/13.5*/
-    padding-top:2.222222em;/*30/13.5*/
-    padding-bottom: 2.792592em;/*37.7/13.5*/
+    padding-top:2.222222rem;/*30/13.5*/
+    padding-bottom: 2.792592rem;/*37.7/13.5*/
     box-shadow:none;
     border:1px solid #ddd;
     border-radius: 8px;;
@@ -80,7 +84,7 @@
     background:none;
     border:none;
     padding:0;
-    margin-top:2.592592rem;/*35/13.5*/ 
+    margin-top:2.592592rem;/*35/13.5*/ /*1.481481rem/*20/13.5*/
 }
 
 .ui.modal >.actions a{
@@ -91,4 +95,176 @@
     color:##40b5d8;
 }
 
-.
+
+/*----------------
+    MODAL 3 BTN
+------------------*/
+
+.ui.modal>.actions>.left.floated.button{
+    margin-left: 0!important;
+}
+
+/*--------------------
+    MODAL NO TITLE
+----------------------*/
+.ui.no_title.modal>.actions{
+    margin-top:1.2rem;
+}
+
+.ui.no_title.modal{
+    padding-bottom:2rem!important;
+}
+
+/*--------------------
+    MODAL WITH STEPS
+----------------------*/
+.ui.step.modal{
+    width:auto!important;
+}
+
+.ui.step.modal>.actions{
+    margin-top:3rem;
+}
+
+.ui.step.modal>.content>.ui.steps{
+    margin-bottom: 2rem!important;
+    text-align: left;
+    width:100%;
+}
+
+
+.ui.steps>.step{
+    padding:1rem 1rem ;
+    text-align: left;
+
+}
+
+.ui.steps .icon{
+    font-size: 1.8rem!important;
+    margin-top:0.3rem!important;
+}
+
+.ui.step.modal>.content>.ui.steps>.step>.content>.title{
+    font-size: 1.111111rem;/*16/13.5*/
+    font-weight: 600;
+}
+
+.ui.step.modal>.content>.ui.steps>.step>.content>.description{
+    font-size:0.851851rem;
+    line-height: 0.7rem;
+}
+
+#modal_4steptext .title, #modal_2stepnext .title{
+    font-size: 1rem!important;
+}
+
+#modal_4steptext .step, #modal_2stepnext .step{
+    padding:0.7rem 0.7rem ;
+}
+
+/*--------------------
+    MODAL WITH TABS
+----------------------*/
+.ui.secondary.pointing.menu>.active{
+    font-weight: 600!important;
+}
+
+.ui.secondary.pointing.menu{
+    margin-bottom: 1.481481rem;/*20/13.5*/
+    margin-top: 1.407407rem;/*19/13.5*/
+}
+
+/*--------------------
+    MODAL WITH MESSAGE
+----------------------*/
+
+.ui.message > .header{
+    margin-bottom: 0.666667rem;/*9/13.5*/
+}
+
+.ui.message{
+    padding-left:1.629629rem;/*22/13.5*/
+    padding-right:1.629629rem;/*22/13.5*/
+    margin-bottom:1.629629rem;/*22/13.5*/
+}
+
+.ui.message>.ui.ordered.list>.item::before{
+    font-weight: 600!important;
+}
+
+.ui.error.message{
+    background: white;
+    color: #E95849;
+    border: 1px solid #E95849; 
+}
+
+strong{
+    font-weight: 600;
+}
+
+#modal_formwarning> .content h5{
+    margin-top:0rem;
+}
+
+/*#modal_formwarning>.content>.ui.grid{
+    margin-bottom:1.5rem;
+}*/
+
+/*--------------------
+    CHECKBOX
+----------------------*/
+.ui.checkbox:not(.conditionterms) label{
+    color:#414141!important;
+    font-weight: 400!important;
+}
+
+.grouped.fields {
+    margin-top: 1.481481rem!important;/*20/13.5*/
+    margin-bottom: 0!important;
+}
+
+.grouped.fields label:first-child{
+    color: #767676!important;
+}
+
+/*--------------------
+        TERMS
+----------------------*/
+.conditionterms label{
+    font-size:0.851851rem!important; 
+    color: #767676!important;
+    font-weight: 400!important;
+}
+
+.conditionterms label{
+    margin-top:1.481481rem!important;/*20/13.5*/
+}
+
+#modal_checkbox>.actions{
+    margin-top: 1.111111rem/*15/13.5*/
+}
+
+/*--------------------
+        POPUP
+----------------------*/
+.ui.custom.popup{
+    padding-left:1.629629rem;/*22/13.5*/;
+    padding-right:1.629629rem;/*22/13.5*/;
+    padding-top:1.925925rem;/*26/13.5*/;
+    padding-top:1.629629rem;/*22/13.5*/;
+    padding-bottom:1.333333rem;;/*22/13.5*/;
+    min-width: 350px!important;
+}
+.ui.custom.popup >.header{
+    font-weight: 600;
+    margin-bottom: 0.740740rem;/*10/13.5*/
+    font-size:1.185185rem;
+}
+
+.ui.custom.popup p{
+    margin-bottom: 0.740740rem;/*10/13.5*/
+}
+
+.ui.custom.popup a{
+    
+}
