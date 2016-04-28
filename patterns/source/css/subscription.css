@@ -121,6 +121,11 @@ ui.subscription.segment >.ui.list > .staff.item a:hover {
 
 
 .ui.popup{margin-left: -0.55em!important;}
+
+.ui.segment {
+    border: none!important;
+    margin-top:0!important;
+}
 /*---------------------*/
 
 /*Duplicate from fullpage.css*/
