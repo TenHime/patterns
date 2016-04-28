@@ -3,12 +3,14 @@
 .ui.card>.ui.header .icon:only-child{
     height:auto!important;
     margin-right:0!important;
-    font-size:1.7rem!important;
+    font-size:1.333333rem!important;/*18/13.5*/
     padding:0em!important;
 }
 
 .ui.card>.ui.header .icon.button{
-    padding:0.1em!important;}
+    padding:0.2em 0.4em!important;
+}
+
 
 /*Styling header text*/
 .ui.card > .ui.header{
@@ -110,6 +112,8 @@
 .ui.card>.content>.ui.list:not(.activities)>.item{
     margin-bottom: 1.4rem!important;
     padding-bottom:0!important;
+    
+    line-height: 1.768rem;
 }
 
 .ui.card>.content>.ui.list>.item:last-child{margin-bottom:0px!important;}
@@ -146,6 +150,10 @@
     line-height: 1.2rem;
     word-wrap: break-word;
     font-weight:600!important;
+}
+
+.ui.list>.item>.content{
+    line-height: 1.786rem!important;
 }
 
 @media only screen and (max-width: 767px){
@@ -313,7 +321,7 @@
 
 .ui.with_text.header.segment{
     padding-top:1.55rem!important;
-    padding-bottom:1.6rem!important;
+    padding-bottom:1.4rem!important;
 }
 
 
